@@ -1,0 +1,391 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-drag: none;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: transparent;
+}
+
+::-moz-selection {
+  background: transparent;
+}
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  place-items: center;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue";
+  transition: color 0.5s, background-color 0.5s;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+:root {
+  color-scheme: light dark;
+
+  background-color: var(--background-color-solid-0);
+  color: var(--text-color-solid-0);
+
+  --primary-color: #066ffa;
+  --success-color: #4caf50;
+  --danger-color: #f44336;
+  --warning-color: #ffc107;
+  --info-color: #016bf8;
+
+  --primary-color-dark: #015cd2;
+  --success-color-dark: #388e3c;
+  --danger-color-dark: #c62828;
+  --warning-color-dark: #ffa000;
+  --info-color-dark: #004ba0;
+
+  /* Start Sizing */
+  --border-radius: 0.4rem;
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 1.25rem;
+  --border-radius-2xl: 2rem;
+
+  --spacing-unit: 1.25rem;
+  --spacing-unit-sm: 0.5rem;
+  --spacing-unit-md: 1.5rem;
+  --spacing-unit-lg: 2rem;
+
+  --font-size-Logo: 1.78rem;
+  --font-size-base: 1.5rem;
+  --font-size-lg: 1.25rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.85rem;
+  --font-size-xs: 0.75rem;
+
+  /* Start Font Family */
+  --font-family-sans: "Inter", sans-serif;
+}
+
+/* ================================================================================================== */
+/* ==========================================  HEADING & TEXT  ====================================== */
+/* ================================================================================================== */
+
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-sans);
+}
+
+/* Heading Level 1 */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-color-solid-0);
+}
+
+/* Heading Level 2 */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color-solid-0);
+}
+
+/* Heading Level 3 */
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--text-color-solid-0);
+}
+
+/* Heading Level 4 */
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color-solid-0);
+}
+
+/* Heading Level 5 */
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-color-solid-0);
+}
+
+/* Heading Level 6 */
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color-solid-0);
+}
+
+a {
+  outline: none;
+  font-family: var(--font-family-sans);
+  color: var(--text-color-solid-0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Text Styles */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color-solid-0);
+}
+
+/* Span */
+span {
+  font-size: 1rem;
+  color: var(--text-color-solid-0);
+}
+
+/* Strong */
+strong {
+  font-weight: bold;
+  color: var(--text-color-solid-0);
+}
+
+/* Em */
+em {
+  font-style: italic;
+  color: var(--text-color-solid-0);
+}
+
+/* B */
+b {
+  font-weight: bold;
+}
+
+/* I */
+i {
+  font-style: italic;
+  color: var(--text-color-solid-0);
+}
+
+/* Mark */
+mark {
+  background-color: var(--text-color-solid-0);
+  color: var(--gray-950);
+}
+
+/* Small */
+small {
+  font-size: 0.875rem;
+}
+
+/* Del */
+del {
+  text-decoration: line-through;
+  color: var(--text-color-solid-500);
+}
+
+/* Ins */
+ins {
+  text-decoration: underline;
+  color: var(--info-color);
+}
+
+/* Sub */
+sub {
+  font-size: 0.75rem;
+  vertical-align: sub;
+}
+
+/* Sup */
+sup {
+  font-size: 0.75rem;
+  vertical-align: super;
+}
+
+/* Blockquote */
+blockquote {
+  margin: 0;
+  padding: 1rem;
+  border-left: 4px solid var(--diver-color-solid-0);
+  background-color: var(--background-color-solid-0);
+  font-style: italic;
+  color: var(--gray-50);
+}
+
+/* Cite */
+cite {
+  font-style: italic;
+  color: var(--text-color-solid-500);
+}
+
+/* Code */
+code {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--diver-color-solid-0);
+  color: var(--text-color-solid-0);
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--border-radius);
+}
+
+/* Pre */
+pre {
+  font-family: var(--font-family-sans);
+  background-color: var(--diver-color-solid-0);
+  color: var(--text-color-solid-0);
+  padding: 0.15rem 1rem;
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+}
+
+/* ================================================================================================== */
+/* =============================================  UL LI OL  ========================================= */
+/* ================================================================================================== */
+
+/* Unordered List (ul) */
+ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color-solid-0);
+}
+
+/* Ordered List (ol) */
+ol {
+  list-style-type: decimal;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color-solid-0);
+}
+
+/* List Items (li) */
+li {
+  line-height: 1.5;
+}
+
+/* Nested Lists */
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-left: 1.5rem;
+}
+
+/* Unordered List Styles */
+ul {
+  padding-left: 1.5rem;
+}
+
+ul.bullets-circle {
+  list-style-type: circle;
+}
+
+ul.bullets-square {
+  list-style-type: square;
+}
+
+ul.bullets-custom {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+ul.bullets-custom li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+ul.bullets-custom li::before {
+  content: "\2022";
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Ordered List Styles */
+ol {
+  padding-left: 1.5rem;
+}
+
+ol.roman {
+  list-style-type: upper-roman;
+}
+
+ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+ol.lower-roman {
+  list-style-type: lower-roman;
+}
+
+/* Custom List Styles */
+ul.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.custom-list li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+ul.custom-list li::before {
+  content: "✓";
+  color: var(--success-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+}
+
+/* Numbered List with Custom Styles */
+ol.custom-numbered {
+  list-style: none;
+  padding: 0;
+}
+
+ol.custom-numbered li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+ol.custom-numbered li::before {
+  content: counter(list-item) ". ";
+  counter-increment: list-item;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: var(--info-color);
+}

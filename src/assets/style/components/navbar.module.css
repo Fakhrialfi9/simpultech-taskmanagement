@@ -1,0 +1,247 @@
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  min-height: 1.5rem;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 9999;
+  background-color: var(--background-color-solid-0);
+  border: 0.085rem solid var(--diver-color-solid-0);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 100%;
+  max-height: auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0.85rem 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: 100%;
+  max-height: auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+}
+
+.contentleft {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 100%;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contentleft > button {
+  position: relative;
+  font-size: 0.85rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  color: var(--text-color-solid-0);
+  background-color: var(--background-color-solid-0);
+  border: 0.1rem solid var(--diver-color-solid-0);
+  border-radius: var(--border-radius-md);
+}
+
+.contentleft > button:hover {
+  color: var(--text-color-solid-0);
+  background-color: var(--background-color-solid-50);
+  border: 0.1rem solid var(--diver-color-solid-0);
+  border-radius: var(--border-radius-md);
+}
+
+.select {
+  display: none;
+}
+
+.select.active {
+  position: absolute;
+  top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  min-width: 15rem;
+  max-width: 15rem;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--background-color-solid-0);
+  border: 0.1rem solid var(--diver-color-solid-0);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.select.active > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.select.active > ul > li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  border-bottom: 0.1rem solid var(--diver-color-solid-0);
+  background-color: var(--background-color-solid-0);
+}
+
+.select.active > ul > li:hover {
+  background-color: var(--background-color-solid-50);
+}
+
+.select.active > ul > li:last-child {
+  border-bottom: none;
+}
+
+.select.active > ul > li > a {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0.5rem 0.85rem;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: 100%;
+  max-height: auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.contentright {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 100%;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+.contentright > a {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 100%;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+.contentright > a > button {
+  font-size: 0.85rem;
+  font-weight: 600;
+  gap: 0.5rem;
+}
+
+.newTaskButton {
+  background-color: var(--primary-color);
+  color: rgb(255, 255, 255);
+}
+
+.cancelButton {
+  background-color: var(--danger-color);
+  color: rgb(255, 255, 255);
+}
+
+.cancelButton:hover {
+  background-color: var(--danger-color);
+}
