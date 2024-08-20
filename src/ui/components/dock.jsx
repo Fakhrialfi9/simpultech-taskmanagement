@@ -56,7 +56,7 @@ const Dock = () => {
         <div ref={selectRef} className={`${dockStyle.select} ${selectMenu ? dockStyle.active : ""}`}>
           <ul>
             <li>
-              <a href='http://localhost:5175/'>
+              <a href='https://simpultech-inbox.vercel.app/'>
                 <MessageSquareMore size={15} /> Go to Inbox Message
               </a>
             </li>
